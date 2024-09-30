@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d1b2a;
+}
+
+.container {
+    max-width: 500px;
+    background-color: ghostwhite;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.search {
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 1px;
+}
+
+.search input {
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: 5px;
+    font-size: 18px;
+}
+
+.search button {
+    border: none;
+    width: 20%;
+    cursor: pointer;
+    border-radius: 0px 15px 15px 0px;
+    height: 40px;
+    background-color: gray;
+}
+
+.search button i {
+    color: white;
+}
+#erro{
+    text-align: center;
+    color: red;
+}
+.container .complete-info{
+    display: none;
+}
+.container .complete-info #country-flag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.container .complete-info #country-flag #flag {
+    border-radius: 20px;
+
+    box-shadow: 1px 1px 3px 1px black;
+}
+
+.container .complete-info #title {
+    text-align: center;
+}
+
+.container .complete-info .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container .complete-info .info #language-country,
+#capital-country,
+#population-country,
+#continents-country {
+    border: solid #0d1b2a 1px;
+    background-color: transparent;
+    margin: 5px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.container .complete-info #link {
+    display: flex;
+    justify-content: center;
+    color: black;
+}

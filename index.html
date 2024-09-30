@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações de Países</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <form class="search">
+            <input type="text" id="input"> 
+            <button  type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+        <div id="erro"></div>
+
+        <div class="complete-info">
+
+            <h1 id="title">Nome do País</h1>
+            <div id="country-flag">
+                <img src="" id="flag">
+            </div>
+            <div class="info">
+                <div id="language-country">
+                    <h2>Lingua</h2>
+                    <p id="lingua"></p>
+                </div>
+                <div id="capital-country">
+                    <h2>Capital</h2>
+                    <p id="cap"></p>
+                </div>
+                <div id="population-country">
+                    <h2>População</h2>
+                    <p id="pop"></p>
+                </div>
+                <div id="continents-country">
+                    <h2>Continente</h2>
+                    <p id="cont"></p>
+                </div>
+            </div>
+            <a href="" target="_blank" id="link">Ver no mapa</a>
+        </div>
+    </div>
+</body>
+</html>
