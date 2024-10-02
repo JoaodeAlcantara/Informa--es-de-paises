@@ -12,12 +12,14 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: #0d1b2a;
+    background-image: url(../img/image.png);
+    background-position: center;
+    background-size: cover;
 }
 
 .container {
     max-width: 500px;
-    background-color: ghostwhite;
+    background-color: rgba(248, 248, 255, 0.8);
     box-shadow: 2px 2px 5px black;
     border-radius: 15px;
     padding: 10px;
@@ -53,20 +55,24 @@ body {
 .search button i {
     color: white;
 }
-#erro{
+
+#erro {
     text-align: center;
     color: red;
 }
-.container .complete-info{
+
+.container .complete-info {
     display: none;
 }
-.container .complete-info #country-flag{
+
+.container .complete-info #country-flag {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 5px;
     width: 100%;
 }
+
 .container .complete-info #country-flag #flag {
     border-radius: 20px;
 

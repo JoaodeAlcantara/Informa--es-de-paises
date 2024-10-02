@@ -2,8 +2,7 @@ document.querySelector('button').addEventListener('click', async (event) => {
     event.preventDefault();
 
     const name = document.querySelector('#input').value;
-    const url = `https://restcountries.com/v3.1/name/${name}`;
-    const resp = await fetch(url);
+    const resp = await fetch(`https://restcountries.com/v3.1/name/${name}`);
     const dados = await resp.json();
     const erro = document.querySelector('#erro');
     const display = document.querySelector('.complete-info');
