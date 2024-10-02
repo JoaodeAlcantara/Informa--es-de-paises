@@ -16,9 +16,7 @@ document.querySelector('button').addEventListener('click', async (event) => {
             erro.innerHTML = 'Pais não encontrado.'
         } else {
             erro.innerHTML = ''
-            if (display.style.display === 'none' || display.style.display === '') {
                 display.style.display = 'block'
-            }
             info({
                 nome: dados[0].name.common,
                 flag: dados[0].flags.png,
